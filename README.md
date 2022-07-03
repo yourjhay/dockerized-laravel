@@ -9,7 +9,7 @@ Supported platform
 - amd64
 - arm64/v8
 
-Services Includeed:
+Services Included:
 - Nginx
 - PHP with nodejs
 - MYSQL
