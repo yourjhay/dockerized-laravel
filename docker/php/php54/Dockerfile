@@ -1,4 +1,4 @@
-FROM php:5.4-apache
+FROM php:5.4-fpm
 
 # Backup and clean source.list file
 RUN cp /etc/apt/sources.list /etc/apt/sources.list.old && \
