@@ -90,8 +90,5 @@ libpng-dev && \
     docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg && \
     docker-php-ext-install gd
 
-# Enable apache modules
-RUN a2enmod rewrite headers
-
 # Cleanup
 RUN rm -rf /usr/src/*
