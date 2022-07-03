@@ -112,6 +112,6 @@ Note: Update the above environment variables in your laravel project relevant to
 php.ini is located at `./docker/php/php.ini`
 
 #
-PHP Dockerfiles from [sprintcube/docker-compose-lamp](https://github.com/sprintcube/docker-compose-lamp). Salamat ha!
+PHP Dockerfiles from [sprintcube/docker-compose-lamp](https://github.com/sprintcube/docker-compose-lamp). Salamat ha! Kinopya ko lang naman yung variables lol.
 
 ## PILIPINAS LANG MALAKAS!
