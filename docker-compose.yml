@@ -20,7 +20,7 @@ services:
     volumes:
       - ${APP_ROOT_DIR}:/var/www
       - ./docker/nginx:/etc/nginx/conf.d
-      - ./docker/nginx/logs:/var/log/nginx
+      - ${NGINX_LOG_DIR}:/var/log/nginx
     networks:
       default: null
   database:

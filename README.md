@@ -99,3 +99,9 @@ DB_PASSWORD=password
 ```
 
 Note: Update the above environment variables in your laravel project relevant to your `.env` in dockerized-laravel.
+
+#
+#
+# php.ini
+
+php.ini is located at `./docker/php/php.ini`
