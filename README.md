@@ -107,6 +107,11 @@ Note: Update the above environment variables in your laravel project relevant to
 
 #
 #
-# php.ini
+## PHP INI
 
 php.ini is located at `./docker/php/php.ini`
+
+#
+PHP Dockerfiles from [sprintcube/docker-compose-lamp](https://github.com/sprintcube/docker-compose-lamp). Salamat ha!
+
+## PILIPINAS LANG MALAKAS!
