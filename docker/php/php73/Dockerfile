@@ -1,4 +1,4 @@
-FROM php:7.3.33-fpm
+FROM php:7.3-fpm
 
 # Surpresses debconf complaints of trying to install apt packages interactively
 # https://github.com/moby/moby/issues/4032#issuecomment-192327844
@@ -49,8 +49,6 @@ RUN apt-get -y update && \
     docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
     docker-php-ext-install -j$(nproc) gd
 
-# Enable apache modules
-RUN a2enmod rewrite headers
 
 # Cleanup
 RUN rm -rf /usr/src/*

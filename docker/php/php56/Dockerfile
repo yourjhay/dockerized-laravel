@@ -28,9 +28,5 @@ RUN docker-php-ext-install curl \
     && pecl install xdebug-2.5.5 && docker-php-ext-enable xdebug \
     && echo "xdebug.remote_enable=1" >> /usr/local/etc/php/php.ini
 
-# Enable apache modules
-RUN a2enmod rewrite headers
 
 EXPOSE 80
-
-ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]

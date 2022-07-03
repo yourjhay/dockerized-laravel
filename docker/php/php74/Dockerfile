@@ -1,4 +1,4 @@
-FROM php:7.4.30-fpm
+FROM php:7.4-fpm
 
 # Surpresses debconf complaints of trying to install apt packages interactively
 # https://github.com/moby/moby/issues/4032#issuecomment-192327844
@@ -75,9 +75,6 @@ libpng-dev && \
     rm -rf /var/lib/apt/lists/* && \
     docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg && \
     docker-php-ext-install gd
-
-# Enable apache modules
-RUN a2enmod rewrite headers
 
 # Cleanup
 RUN rm -rf /usr/src/*
