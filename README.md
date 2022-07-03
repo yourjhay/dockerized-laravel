@@ -11,7 +11,7 @@ Supported platform
 
 Services Included:
 - Nginx
-- PHP with nodejs
+- PHP with nodejs(on php7+ only)
 - MYSQL
 
 ## Requirements

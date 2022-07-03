@@ -41,3 +41,5 @@ RUN apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ 
 RUN docker-php-ext-install -j$(nproc) gd
 
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sh
+RUN apt-get -y install nodejs

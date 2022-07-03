@@ -50,5 +50,8 @@ RUN apt-get -y update && \
     docker-php-ext-install -j$(nproc) gd
 
 
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sh
+RUN apt-get -y install nodejs
+
 # Cleanup
 RUN rm -rf /usr/src/*
