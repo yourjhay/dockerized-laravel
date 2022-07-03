@@ -1,9 +1,12 @@
 # Dockerized Laravel Application
 
-Dockerized your Laravel Application Easily with this premade docker-compose 
+Dockerized your Laravel Application Easily with this premade docker-compose.
+
+Author: [Rey Jhon](https://github.com/yourjhay)
+
 
 Supported platform
-- am64
+- amd64
 - arm64/v8
 
 Services Includeed:
@@ -11,7 +14,18 @@ Services Includeed:
 - PHP with nodejs
 - MYSQL
 
-## Setup Environment Variable
+## Clone this repo
+
+```
+git clone https://github.com/yourjhay/dockerized-laravel.git
+```
+
+```
+cd dockerized-laravel
+```
+
+
+## Next: Setup Environment Variable
 
 Copy the `.example.env`
 
@@ -19,7 +33,7 @@ Copy the `.example.env`
 cp .env.example .env
 ```
 
-Edit .env file according to your needs
+Edit `.env` file according to your configuration need.
 
 # Create and Run Container 
 

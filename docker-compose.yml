@@ -2,7 +2,7 @@ services:
   application:
     image: ${APP_NAME}-php
     build:
-      context: ./docker/bin/${PHP_VERSION}
+      context: ./docker/php/${PHP_VERSION}
     container_name: ${APP_NAME}-app
     restart: unless-stopped
     working_dir: /var/www/
