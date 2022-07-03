@@ -40,11 +40,12 @@ services:
     networks:
       default: null
   redis:
-      container_name: '${APP_NAME}-redis'
-      image: redis:latest
-      ports:
-        - "127.0.0.1:${REDIS_PORT}:6379"
-
+    container_name: '${APP_NAME}-redis'
+    image: redis:latest
+    ports:
+      - "127.0.0.1:${REDIS_PORT}:6379"
+    networks:
+      default: null
 networks:
   default:
     name: ${APP_NAME}-network

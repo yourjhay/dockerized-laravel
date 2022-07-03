@@ -105,7 +105,9 @@ DB_PASSWORD=password
 
 Note: Update the above environment variables in your laravel project relevant to your `.env` in dockerized-laravel.
 
-#
+## Redis
+ Redis is Included. Just remove it in docker-compose.yml if you don't need it.
+ 
 #
 ## PHP INI
 
@@ -113,5 +115,15 @@ php.ini is located at `./docker/php/php.ini`
 
 #
 PHP Dockerfiles from [sprintcube/docker-compose-lamp](https://github.com/sprintcube/docker-compose-lamp). Salamat ha! Kinopya ko lang naman yung variables lol.
+
+# PHP versions
+- 5.4
+- 5.6
+- 7.1
+- 7.2 - tested tested on laravel 7.0
+- 7.3
+- 7.4 - tested tested on laravel 7.0
+- 8.0 
+- 8.1 - tested on laravel 9.11
 
 ## PILIPINAS LANG MALAKAS!
