@@ -14,6 +14,11 @@ Services Includeed:
 - PHP with nodejs
 - MYSQL
 
+## Requirements
+- docker
+- docker-compose
+- a laravel project of course -_-
+
 ## Clone this repo
 
 ```
