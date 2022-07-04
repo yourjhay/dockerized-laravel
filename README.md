@@ -40,16 +40,16 @@ cp .env.example .env
 
 Edit `.env` file according to your configuration need.
 
-# Create and Run Container 
+# Create and Run Container as current user
 
 ```
-docker-compose up
+CURRENT_UID=$(id -u):$(id -g) docker-compose up
 ```
 
 ## Run in Background
 
 ```
-docker-compose up -d 
+CURRENT_UID=$(id -u):$(id -g) docker-compose up -d 
 ```
 
 You can now visit your laravel app in your browser using your localhost or Host IP Address and `APP_PORT` in your .env
@@ -113,6 +113,17 @@ DB_PASSWORD=password
 ```
 
 Note: Update the above environment variables in your laravel project relevant to your `.env` in dockerized-laravel.
+
+MYSQL Container only exist in your application stack network and can only access by app within it's network. You cannot access this to your local machine.
+
+If you want to access mysql container within your local machine / localhost
+
+```
+    ports:
+      - ${MYSQL_PORT}:3306
+```
+
+Add the above config under *database services*.
 
 ## Redis
  Redis is Included. Just remove it in docker-compose.yml if you don't need it.

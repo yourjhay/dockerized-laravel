@@ -6,6 +6,7 @@ services:
     container_name: ${APP_NAME}-app
     restart: unless-stopped
     working_dir: /var/www/
+    user: ${CURRENT_UID}
     volumes:
         - ${APP_ROOT_DIR}:/var/www
         - ./docker/php/php.ini:/usr/local/etc/php/php.ini
@@ -27,8 +28,6 @@ services:
     image: mysql:8.0-oracle
     container_name: ${APP_NAME}-mysql
     restart: unless-stopped
-    ports:
-      - ${MYSQL_PORT}:3306
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
