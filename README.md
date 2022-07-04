@@ -63,6 +63,13 @@ EG:
 #
 #
 
+## Permission Error on Storage Folder and Bootstrap Folder
+
+```
+chmod 765 -R storage
+chmod 765 -R bootstrap
+```
+
 # Running command in your application container
 
 You must only run all commands related to your app like `php artisan` or `npm` on the application container.
