@@ -66,8 +66,8 @@ EG:
 ## Permission Error on Storage Folder and Bootstrap Folder
 
 ```
-chmod 765 -R storage
-chmod 765 -R bootstrap
+chmod 777 -R storage
+chmod 777 -R bootstrap
 ```
 
 # Running command in your application container
