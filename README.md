@@ -54,6 +54,8 @@ docker-compose up -d
 
 You can now visit your laravel app in your browser using your localhost or Host IP Address and `APP_PORT` in your .env
 
+Note: Ignore **application pulling** error. It will build the image instead.
+
 EG:
 [http://127.0.0.1:8101](http://127.0.0.1:8101)
 
